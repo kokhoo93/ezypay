@@ -21,7 +21,7 @@ public class SubscriptionServiceImpl implements SubscriptionService{
 		Subscription createdSubs = new Subscription();
 		List<String> dates = new ArrayList<String>();
 		Calendar calendar = new GregorianCalendar();
-		SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
+		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
 	    calendar.setTime(format.parse(subs.getStartDate()));
 		createdSubs.setAmount(subs.getAmount());
 		createdSubs.setSubsType(subs.getSubsType());
