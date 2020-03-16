@@ -18,7 +18,7 @@ public class SubscriptionController {
 	@Autowired
 	private SubscriptionService subscriptionService;
 	
-	@CrossOrigin(origins = "https://ezypay-vue.herokuapp.com/")
+	@CrossOrigin(origins = "https://ezypay-vue.herokuapp.com")
 	@RequestMapping(value = "/create", method = RequestMethod.POST)
     @ResponseBody
     public Subscription createSubscription(@RequestBody Subscription subs) throws ParseException {
